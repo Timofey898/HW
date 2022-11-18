@@ -1,0 +1,6 @@
+x  = input('введте стороку ')
+while not(x == ("PRINT")):
+    print('id'+ x)
+    x  = input('введите строку')
+    
+    

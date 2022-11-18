@@ -1,0 +1,10 @@
+x = float(input('введите два числа:'))
+y = float(input())
+while not(y == 0):
+    print(x+y,x-y,x*y,x/y,sep = '\n')
+    x = float(input('введите два числа:'))
+    y = float(input())
+else :
+    print('на ноль делить нельзя')
+    
+
