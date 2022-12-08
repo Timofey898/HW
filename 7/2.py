@@ -1,0 +1,23 @@
+import math
+my_file = open("BabyFile.txt", "r+")
+a = int(input('a'))
+b = int(input('b'))
+h = int(input('h'))
+x = 0
+my_file.write('a:  ')
+my_file.write('b:  ')
+my_file.write('h:  ')
+my_file.write('x:    ')
+my_file.write('y: ')
+for x in range (a,b,h):
+    y = str((x* math.log(1+(math.sin(x)/x))) / x + math.sin(x))
+    my_file.write('\n')
+    my_file.write(str(a))
+    my_file.write('   ')
+    my_file.write(str(b))
+    my_file.write('   ')
+    my_file.write(str(h))
+    my_file.write('   ')
+    my_file.write(str(x))
+    my_file.write('   ')
+    my_file.write(y)
